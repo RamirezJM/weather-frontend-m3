@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>ClimApp</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom-text bg-primary bg-gradient p-3">
+      <div class="container">
+        <a href="index.html" class="navbar-brand fs-2">
+          <img src="assets/images/logo.png" alt="logo" width="50">
+          ClimApp
+        </a>
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          class="navbar-toggler border border-white">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav align-items-center ms-auto ">
+            <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#pronostico" class="nav-link">Pronósticos</a></li>
+            <li class="nav-item"><a href="#acerca-de" class="nav-link">Acerca de</a></li>
+            <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- === Hero === -->
+
+  <section class="hero my-5 p-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <img src="assets/images/hero1.jpg" alt="equipo meteorólogos" class="img-fluid rounded-2">
+        </div>
+        <div class="col-md-6">
+          <h1 class="text-center display-3"><span class="text-primary">ClimApp</span>, tecnología y expertos trabajando
+            para ti</h1>
+          <p class="lead fw-normal mt-4 text-center">Transformamos información compleja en una experiencia simple para
+            que tomes mejores decisiones cada día</p>
+          <a href="#contacto"
+            class="btn btn-danger bg-gradient fw-semibold text-uppercase d-block mx-auto mt-5">Contáctanos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- === Tarjetas === -->
+
+    <section class="pronostico p-4 my-4 bg-light" id="pronostico">
+      <div class="container">
+        <h2 class="text-center mb-5">Pronósticos</h2>
+        <p class="text-center lead fw-normal mb-5">Explora ejemplos reales de nuestros reportes meteorológicos.</p>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+          <div class="col">
+            <div class="card shadow-lg h-100 border-secondary">
+              <div class="card-img-top">
+                <img src="assets/images/ciudades/santiago.webp" alt="santiago" class="img-fluid rounded-top">
+              </div>
+              <div class="card-body text-center">
+                <span><i class="bi bi-sun display-4 text-warning"></i></span>
+                <h5 class="card-title mt-3 mb-2">Santiago</h5>
+                <p class="text-secondary fw-medium mb-1">Despejado</p>
+                <h4 class="fw-bold">27°C</h4>
+                <button class="btn btn-primary mt-3 btn-detalle" data-id="1">
+                  Ver Detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-lg h-100 border-secondary">
+              <div class="card-img-top">
+                <img src="assets/images/ciudades/nueva-york.webp" alt="nueva york" class="img-fluid rounded-top">
+              </div>
+              <div class="card-body text-center">
+                <span><i class="bi bi-clouds display-4 text-secondary"></i></span>
+                <h5 class="card-title mt-3 mb-2">Nueva York</h5>
+                <p class="text-secondary fw-medium mb-1">Nublado</p>
+                <h4 class="fw-bold">12°C</h4>
+                <button class="btn btn-primary mt-3 btn-detalle" data-id="2">
+                  Ver Detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-lg h-100 border-secondary">
+              <div class="card-img-top">
+                <img src="assets/images/ciudades/londres.webp" alt="londres" class="img-fluid rounded-top">
+              </div>
+              <div class="card-body text-center">
+                <span><i class="bi bi-cloud-rain display-4 text-primary"></i></span>
+                <h5 class="card-title mt-3 mb-2">Londres</h5>
+                <p class="text-secondary fw-medium mb-1">Lluvia</p>
+                <h4 class="fw-bold">9°C</h4>
+                <button class="btn btn-primary mt-3 btn-detalle" data-id="3">
+                  Ver Detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-lg h-100 border-secondary">
+              <div class="card-img-top">
+                <img src="assets/images/ciudades/johannesburg.webp" alt="johannesburg" class="img-fluid rounded-top">
+              </div>
+              <div class="card-body text-center">
+                <span><i class="bi bi-sun display-4 text-warning"></i></span>
+                <h5 class="card-title mt-3 mb-2">Johannesburgo</h5>
+                <p class="text-secondary fw-medium mb-1">Despejado</p>
+                <h4 class="fw-bold">29°C</h4>
+                <button class="btn btn-primary mt-3 btn-detalle" data-id="4">
+                  Ver Detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-lg h-100 border-secondary">
+              <div class="card-img-top">
+                <img src="assets/images/ciudades/beijing.webp" alt="beijing" class="img-fluid rounded-top">
+              </div>
+              <div class="card-body text-center">
+                <span><i class="bi bi-cloud display-4 text-secondary"></i></span>
+                <h5 class="card-title mt-3 mb-2">Beijing</h5>
+                <p class="text-secondary fw-medium mb-1">Nublado</p>
+                <h4 class="fw-bold">14°C</h4>
+                <button class="btn btn-primary mt-3 btn-detalle" data-id="5">
+                  Ver Detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-lg h-100 border-secondary">
+              <div class="card-img-top">
+                <img src="assets/images/ciudades/san-francisco.webp" alt="san francisco" class="img-fluid rounded-top">
+              </div>
+              <div class="card-body text-center">
+                <span><i class="bi bi-cloud-sun display-4 text-secondary"></i></span>
+                <h5 class="card-title mt-3 mb-2">San Francisco</h5>
+                <p class="text-secondary fw-medium mb-1">Parcial</p>
+                <h4 class="fw-bold">17°C</h4>
+                <button class="btn btn-primary mt-3 btn-detalle" data-id="6">
+                  Ver Detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-lg h-100 border-secondary">
+              <div class="card-img-top">
+                <img src="assets/images/ciudades/budapest.webp" alt="budapest" class="img-fluid rounded-top">
+              </div>
+              <div class="card-body text-center">
+                <span><i class="bi bi-cloud-sun display-4 text-secondary"></i></span>
+                <h5 class="card-title mt-3 mb-2">Budapest</h5>
+                <p class="text-secondary fw-medium mb-1">Parcial</p>
+                <h4 class="fw-bold">11°C</h4>
+                <button class="btn btn-primary mt-3 btn-detalle" data-id="7">
+                  Ver Detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-lg h-100 border-secondary">
+              <div class="card-img-top">
+                <img src="assets/images/ciudades/el-cairo.webp" alt="el cairo" class="img-fluid rounded-top">
+              </div>
+              <div class="card-body text-center">
+                <span><i class="bi bi-sun display-4 text-warning"></i></span>
+                <h5 class="card-title mt-3 mb-2">El Cairo</h5>
+                <p class="text-secondary fw-medium mb-1">Despejado</p>
+                <h4 class="fw-bold">33°C</h4>
+                <button class="btn btn-primary mt-3 btn-detalle" data-id="8">
+                  Ver Detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-lg h-100 border-secondary">
+              <div class="card-img-top">
+                <img src="assets/images/ciudades/paris.webp" alt="paris" class="img-fluid rounded-top">
+              </div>
+              <div class="card-body text-center">
+                <span><i class="bi bi-cloud-rain display-4 text-primary"></i></span>
+                <h5 class="card-title mt-3 mb-2">Paris</h5>
+                <p class="text-secondary fw-medium mb-1">Lluvia</p>
+                <h4 class="fw-bold">13°C</h4>
+                <button class="btn btn-primary mt-3 btn-detalle" data-id="9">
+                  Ver Detalles
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-lg h-100 border-secondary">
+              <div class="card-img-top">
+                <img src="assets/images/ciudades/sidney.webp" alt="sidney" class="img-fluid rounded-top">
+              </div>
+              <div class="card-body text-center">
+                <span><i class="bi bi-sun display-4 text-warning"></i></span>
+                <h5 class="card-title mt-3 mb-2">Sidney</h5>
+                <p class="text-secondary fw-medium mb-1">Despejado</p>
+                <h4 class="fw-bold">26°C</h4>
+                <button class="btn btn-primary mt-3 btn-detalle" data-id="10">
+                  Ver Detalles
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- === Modal dinámico que muestra el detalle de cada ciudad === 
+    
+    *** al cerrar el modal se produce un warning de accesibilidad en la consola
+    que no corresponde a errores de mi código, sino a como Bootstrap maneja el 
+    focus al cerrar el modal. Está reportado como issue oficial en la versión
+    5.3 y existen diversos hilos al respecto en Stackoverflow y github. No
+    afecta la funcionalidad. ***
+    -->
+
+    <div class="modal fade" id="detalleModal" tabindex="-1" aria-labelledby="detalleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="" alt="" class="img-fluid rounded-circle object-fit-cover me-3 modalImage">
+            <h5 class="modal-title" id="detalleModalLabel">Ciudad</h5>
+            <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+              <div id="modal-icono"></div>
+              <div>
+                <h3 id="modalTemp" class="m-0">°C</h3>
+                <p id="modalEstado" class="text-muted m-0"></p>
+              </div>
+            </div>
+            <div class="row text-center mb-4">
+              <div class="col-6">
+                <p class="fw-bold m-0">Humedad</p>
+                <p id="modalHumedad" class="m-0 fs-5"> %</p>
+              </div>
+              <div class="col-6">
+                <p class="fw-bold m-0">Viento</p>
+                <p id="modalViento" class="m-0 fs-5"> km/h</p>
+              </div>
+            </div>
+            <h5 class="mb-3">Pronóstico semanal</h5>
+            <div id="modalPronostico"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger bg-gradient d-block mx-auto"
+              data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- === Acerca de === -->
+
+    <section class="acerca-de my-4 p-4" id="acerca-de">
+      <div class="container">
+        <h2 class="text-center mb-5">Acerca de</h2>
+        <div class="row flex-sm-column-reverse flex-md-row g-4 mt-4">
+          <div class="col-md-6">
+            <p class="lead fw-normal">En <span class="text-primary">ClimApp</span> somos un equipo de especialistas
+              apasionados por entender el clima y anticipar sus cambios.
+              Combinamos experiencia meteorológica con tecnología de punta para analizar datos, detectar tendencias y
+              ofrecer pronósticos confiables. Nuestro trabajo se centra en entregar información clara y precisa,
+              diseñada para ayudar a cada cliente a tomar mejores decisiones en su día a día.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/images/equipo2.jpg" alt="equipo de profesionales" class="img-fluid rounded-2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="conceptos my-5 py-4 bg-secondary-subtle">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 d-flex flex-column align-items-center text-center">
+            <span><i class="bi bi-journal-text text-primary display-4 fw-bold"></i></span>
+            <h4>Reportes detallados</h4>
+            <p class="fs-5">Información clara, organizada y fácil de interpretar</p>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex flex-column align-items-center text-center">
+            <span><i class="bi bi-cpu text-primary display-4 fw-bold"></i></span>
+            <h4>Tecnología de punta</h4>
+            <p class="fs-5">Análisis avanzado con herramientas modernas</p>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex flex-column align-items-center text-center">
+            <span><i class="bi bi-bullseye text-primary display-4 fw-bold"></i></span>
+            <h4>Pronósticos precisos</h4>
+            <p class="fs-5">Datos confiables para decisiones seguras</p>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex flex-column align-items-center text-center">
+            <span><i class="bi bi-speedometer2 text-primary display-4 fw-bold"></i></span>
+            <h4>Monitoreo en tiempo real</h4>
+            <p class="fs-5">Actualizaciones constantes de eventos dinámicos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- === Contacto === -->
+
+    <section class="contacto my-5 p-4" id="contacto">
+      <div class="container">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <p class="text-center lead fw-normal mb-5">Si tienes alguna pregunta o te gustaría trabajar con nosotros,
+          envíanos tu mensaje.</p>
+        <div class="form-wrapper w-100 mx-auto">
+          <form class="my-5 p-2 bg-light rounded-2">
+            <input type="text" placeholder="Nombre" class="form-control border-primary w-100 my-4">
+            <input type="text" placeholder="Email" class=" form-control border-primary w-100 my-4">
+            <textarea placeholder="Mensaje" class="form-control border-primary w-100 my-4"></textarea>
+            <button class="btn btn-danger bg-gradient text-uppercase fw-semibold mx-auto w-100">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- === Footer === -->
+
+  <footer class="p-2 bg-secondary-subtle">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4 text-center">
+          <img src="assets/images/logo.png" alt="logo app" width="50">
+          <h5 class="text-primary">ClimApp</h5>
+        </div>
+        <div class="col-md-4 text-center">
+          <h6>ClimApp</h6>
+          <p class="mb-0">Calle Weather # 123</p>
+          <p class="mb-0">+56 9 12345678</p>
+          <a href="#">contacto@climapp.cl</a>
+        </div>
+        <div class="col-md-4 text-center">
+          <h6>Contáctanos</h6>
+          <div class="d-flex gap-3 justify-content-center">
+            <span><i class="bi bi-facebook fs-3 text-primary"></i></span>
+            <span><i class="bi bi-twitter fs-3 text-primary"></i></span>
+            <span><i class="bi bi-instagram fs-3 text-primary"></i></span>
+            <span><i class="bi bi-pinterest fs-3 text-primary"></i></span>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-4">
+        Copyright&copy;JMRamirez
+      </p>
+    </div>
+    </div>
+  </footer>
+
+  <!-- === Botón top === -->
+
+  <button class="btn-top border border-primary rounded-5" id="btn-top">
+    <span><i class="bi bi-arrow-up text-primary bg-light rounded-circle fs-1 fw-bold"></i></span>
+  </button>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
