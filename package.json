@@ -15,18 +15,16 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "watch:css": "sass assets/scss/styles.scss assets/css/styles.css --watch",
+    "watch:css": "sass assets/scss/main.scss assets/css/styles.css --watch --quiet-deps",
     "build:css": "postcss assets/css/styles.css --output assets/css/styles.css --no-map",
     "purge": "postcss assets/css/styles.css --use @fullhuman/postcss-purgecss --output assets/css/styles.css --no-map"
-  },
-  "dependencies": {
-    "bootstrap": "^5.3.8",
-    "sass": "^1.95.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^7.0.2",
     "autoprefixer": "^10.4.22",
+    "bootstrap": "^5.3.8",
     "postcss": "^8.5.6",
-    "postcss-cli": "^11.0.1"
+    "postcss-cli": "^11.0.1",
+    "sass": "^1.95.1"
   }
 }
