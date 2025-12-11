@@ -1,0 +1,8 @@
+@use 'abstracts/variables' as *;
+
+@use '../../node_modules/bootstrap/scss/bootstrap.scss' with(
+   $theme-colors: (
+    "primary": $primary
+  )
+);
+
