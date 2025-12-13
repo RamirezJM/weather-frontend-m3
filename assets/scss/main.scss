@@ -1,7 +1,29 @@
 @use 'abstracts/variables' as var;
+@use 'base/typography';
+@use 'abstracts/mixins' as mix;
 
 
 @use '../../node_modules/bootstrap/scss/bootstrap.scss' with(
-   $primary: var.$primary
+   $primary: var.$primary,
+   $secondary: var.$secondary,
+   $warning: var.$warning,
+   $danger: var.$danger,
+   $light: var.$light,
+   $dark: var.$dark
 );
+
+header{
+  @include mix.gradient(45deg, var.$primary, var.$sky-light 50%, var.$sky-dark )
+}
+
+.navbar-custom-text .nav-link,
+.navbar-custom-text .navbar-brand {
+  color: var.$text-light;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.btn-cta{
+  @include mix.gradient2(var.$danger, var.$danger-light)
+}
 
