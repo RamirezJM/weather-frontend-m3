@@ -10,15 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/styles.css">
   <title>ClimApp</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom-text bg-primary bg-gradient p-3">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom-text p-3">
       <div class="container">
         <a href="index.html" class="navbar-brand fs-2">
           <img src="assets/images/logo.png" alt="logo" width="50">
@@ -34,6 +32,19 @@
             <li class="nav-item"><a href="#pronostico" class="nav-link">Pronósticos</a></li>
             <li class="nav-item"><a href="#acerca-de" class="nav-link">Acerca de</a></li>
             <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            <li class="nav-item">
+              <div class="btn-group" id="bd-theme" role="group" aria-label="color-theme">
+                <button class="btn btn-light active" aria-pressed="true"
+                  type="button" data-bs-theme-value="light">
+                  <i class="bi bi-brightness-high-fill"></i>
+                </button>
+
+                <button class="btn btn-dark" type="button"
+                  data-bs-theme-value="dark">
+                  <i class="bi bi-moon-fill"></i>
+                </button>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -45,16 +56,17 @@
   <section class="hero my-5 p-4">
     <div class="container">
       <div class="row g-4">
-        <div class="col-md-6">
+        <div class="col-md-6 hero__image">
           <img src="assets/images/hero1.jpg" alt="equipo meteorólogos" class="img-fluid rounded-2">
         </div>
-        <div class="col-md-6">
-          <h1 class="text-center display-3"><span class="text-primary">ClimApp</span>, tecnología y expertos trabajando
+        <div class="col-md-6 hero__text">
+          <h1 class="text-center display-3 hero__text__title"><span class="text-primary">ClimApp</span>, tecnología y
+            expertos trabajando
             para ti</h1>
-          <p class="lead fw-normal mt-4 text-center">Transformamos información compleja en una experiencia simple para
+          <p class="lead fw-normal mt-4 text-center hero__text__paragraph">Transformamos información compleja en una
+            experiencia simple para
             que tomes mejores decisiones cada día</p>
-          <a href="#contacto"
-            class="btn btn-danger bg-gradient fw-semibold text-uppercase d-block mx-auto mt-5">Contáctanos</a>
+          <a href="#contacto" class="btn hero__btn fw-semibold text-uppercase d-block mx-auto mt-5">Contáctanos</a>
         </div>
       </div>
     </div>
@@ -66,8 +78,9 @@
 
     <section class="pronostico p-4 my-4 bg-light" id="pronostico">
       <div class="container">
-        <h2 class="text-center mb-5">Pronósticos</h2>
-        <p class="text-center lead fw-normal mb-5">Explora ejemplos reales de nuestros reportes meteorológicos.</p>
+        <h2 class="text-center mb-5 pronostico__title">Pronósticos</h2>
+        <p class="text-center lead fw-normal mb-5 pronostico__subtitle">Explora ejemplos reales de nuestros reportes
+          meteorológicos.</p>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
 
           <div class="col">
@@ -293,17 +306,19 @@
 
     <section class="acerca-de my-4 p-4" id="acerca-de">
       <div class="container">
-        <h2 class="text-center mb-5">Acerca de</h2>
+        <h2 class="text-center mb-5 acerca-de__title">Acerca de</h2>
         <div class="row flex-sm-column-reverse flex-md-row g-4 mt-4">
           <div class="col-md-6">
-            <p class="lead fw-normal">En <span class="text-primary">ClimApp</span> somos un equipo de especialistas
+            <p class="lead fw-normal acerca-de__text">En <span class="text-primary">ClimApp</span> somos un equipo de
+              especialistas
               apasionados por entender el clima y anticipar sus cambios.
               Combinamos experiencia meteorológica con tecnología de punta para analizar datos, detectar tendencias y
               ofrecer pronósticos confiables. Nuestro trabajo se centra en entregar información clara y precisa,
               diseñada para ayudar a cada cliente a tomar mejores decisiones en su día a día.</p>
           </div>
           <div class="col-md-6">
-            <img src="assets/images/equipo2.jpg" alt="equipo de profesionales" class="img-fluid rounded-2">
+            <img src="assets/images/equipo2.jpg" alt="equipo de profesionales"
+              class="img-fluid rounded-2 acerca-de__image">
           </div>
         </div>
       </div>
@@ -313,24 +328,24 @@
       <div class="container">
         <div class="row g-4">
           <div class="col-md-6 col-lg-3 d-flex flex-column align-items-center text-center">
-            <span><i class="bi bi-journal-text text-primary display-4 fw-bold"></i></span>
-            <h4>Reportes detallados</h4>
-            <p class="fs-5">Información clara, organizada y fácil de interpretar</p>
+            <span class="conceptos__icon"><i class="bi bi-journal-text text-primary display-4 fw-bold"></i></span>
+            <h4 class="conceptos__title">Reportes detallados</h4>
+            <p class="fs-5 conceptos__text">Información clara, organizada y fácil de interpretar</p>
           </div>
           <div class="col-md-6 col-lg-3 d-flex flex-column align-items-center text-center">
-            <span><i class="bi bi-cpu text-primary display-4 fw-bold"></i></span>
-            <h4>Tecnología de punta</h4>
-            <p class="fs-5">Análisis avanzado con herramientas modernas</p>
+            <span class="conceptos__icon"><i class="bi bi-cpu text-primary display-4 fw-bold"></i></span>
+            <h4 class="conceptos__title">Tecnología de punta</h4>
+            <p class="fs-5 conceptos__text">Análisis avanzado con herramientas modernas</p>
           </div>
           <div class="col-md-6 col-lg-3 d-flex flex-column align-items-center text-center">
-            <span><i class="bi bi-bullseye text-primary display-4 fw-bold"></i></span>
-            <h4>Pronósticos precisos</h4>
-            <p class="fs-5">Datos confiables para decisiones seguras</p>
+            <span class="conceptos__icon"><i class="bi bi-bullseye text-primary display-4 fw-bold"></i></span>
+            <h4 class="conceptos__title">Pronósticos precisos</h4>
+            <p class="fs-5 conceptos__text">Datos confiables para decisiones seguras</p>
           </div>
           <div class="col-md-6 col-lg-3 d-flex flex-column align-items-center text-center">
-            <span><i class="bi bi-speedometer2 text-primary display-4 fw-bold"></i></span>
-            <h4>Monitoreo en tiempo real</h4>
-            <p class="fs-5">Actualizaciones constantes de eventos dinámicos</p>
+            <span class="conceptos__icon"><i class="bi bi-speedometer2 text-primary display-4 fw-bold"></i></span>
+            <h4 class="conceptos__title">Monitoreo al instante</h4>
+            <p class="fs-5 conceptos__text">Actualizaciones constantes de eventos dinámicos</p>
           </div>
         </div>
       </div>
@@ -340,15 +355,16 @@
 
     <section class="contacto my-5 p-4" id="contacto">
       <div class="container">
-        <h2 class="text-center mb-4">Contacto</h2>
-        <p class="text-center lead fw-normal mb-5">Si tienes alguna pregunta o te gustaría trabajar con nosotros,
+        <h2 class="text-center mb-4 contacto__title">Contacto</h2>
+        <p class="text-center lead fw-normal mb-5 contacto__subtitle">Si tienes alguna pregunta o te gustaría trabajar
+          con nosotros,
           envíanos tu mensaje.</p>
-        <div class="form-wrapper w-100 mx-auto">
+        <div class="contacto__form w-100 mx-auto">
           <form class="my-5 p-2 bg-light rounded-2">
             <input type="text" placeholder="Nombre" class="form-control border-primary w-100 my-4">
             <input type="text" placeholder="Email" class=" form-control border-primary w-100 my-4">
             <textarea placeholder="Mensaje" class="form-control border-primary w-100 my-4"></textarea>
-            <button class="btn btn-danger bg-gradient text-uppercase fw-semibold mx-auto w-100">Enviar</button>
+            <button class="btn form__btn text-uppercase fw-semibold mx-auto w-100">Enviar</button>
           </form>
         </div>
       </div>
@@ -361,22 +377,22 @@
     <div class="container">
       <div class="row g-4">
         <div class="col-md-4 text-center">
-          <img src="assets/images/logo.png" alt="logo app" width="50">
-          <h5 class="text-primary">ClimApp</h5>
+          <img src="assets/images/logo.png" alt="logo app" width="50" class="footer__logo">
+          <h5 class="text-light">ClimApp</h5>
         </div>
-        <div class="col-md-4 text-center">
-          <h6>ClimApp</h6>
+        <div class="col-md-4 text-center text-dark">
+          <h6 class="text-light">ClimApp</h6>
           <p class="mb-0">Calle Weather # 123</p>
           <p class="mb-0">+56 9 12345678</p>
-          <a href="#">contacto@climapp.cl</a>
+          <a href="#" class="text-dark">contacto@climapp.cl</a>
         </div>
         <div class="col-md-4 text-center">
-          <h6>Contáctanos</h6>
+          <h6 class="text-light">Contáctanos</h6>
           <div class="d-flex gap-3 justify-content-center">
-            <span><i class="bi bi-facebook fs-3 text-primary"></i></span>
-            <span><i class="bi bi-twitter fs-3 text-primary"></i></span>
-            <span><i class="bi bi-instagram fs-3 text-primary"></i></span>
-            <span><i class="bi bi-pinterest fs-3 text-primary"></i></span>
+            <span><i class="bi bi-facebook fs-3 text-dark"></i></span>
+            <span><i class="bi bi-twitter fs-3 text-dark"></i></span>
+            <span><i class="bi bi-instagram fs-3 text-dark"></i></span>
+            <span><i class="bi bi-pinterest fs-3 text-dark"></i></span>
           </div>
         </div>
       </div>
@@ -389,7 +405,7 @@
 
   <!-- === Botón top === -->
 
-  <button class="btn-top border border-primary rounded-5" id="btn-top">
+  <button class="top__btn border border-primary rounded-5" id="btn-top">
     <span><i class="bi bi-arrow-up text-primary bg-light rounded-circle fs-1 fw-bold"></i></span>
   </button>
 
@@ -397,6 +413,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script src="assets/js/theme.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 
