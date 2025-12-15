@@ -3,5 +3,5 @@
 }
 
 @mixin gradient2($color1, $color2){
-  background: linear-gradient($color1, $color2);
+  background: radial-gradient($color1, $color2);
 }
