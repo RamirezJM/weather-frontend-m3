@@ -1,7 +1,7 @@
 @use 'abstracts/variables' as var;
 @use 'base/typography';
 @use 'abstracts/mixins' as mix;
-@use 'layout/pronostico';
+@use 'components';
 
 
 @use '../../node_modules/bootstrap/scss/bootstrap.scss' with(
@@ -44,15 +44,25 @@ header, footer{
   }
 } */
 
-.pronostico {
-  background-color: var.$light; // Tu color base
+/* .pronostico {
+  background-color: var.$light; */ // Tu color base
 
   // INTENTA ESTO MANUALMENTE (sin el mixin)
   // Esto simula exactamente lo que el mixin debería hacer
-  @at-root [data-bs-theme="dark"] & {
-     background-color: var.$sky-dark !important; // Usa un color obvio y !important para probar
+/*   @at-root [data-bs-theme="dark"] & {
+     background-color: red !important; // Usa un color obvio y !important para probar
   }
+} */
+
+[data-bs-theme="dark"] .pronostico{
+  background-color: var.$bg-dark;
 }
+
+[data-bs-theme="dark"] .card{
+  border: var.$text-light solid 2px;
+}
+
+
 
 .top__btn {
   position: fixed;
