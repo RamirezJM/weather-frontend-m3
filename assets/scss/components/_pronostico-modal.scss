@@ -1,4 +1,28 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+/* .btn-close {
+  @at-root [data-bs-theme="dark"] & {
+    background-color: yellow;
+    filter: invert(1);
+    opacity: 1;
+  }
+} */
+
+.btn-close {
+ border: 2px solid var.$danger;
+
+  @at-root [data-bs-theme="dark"] & {
+    background-color: #23caba;
+    filter: invert(1);
+    border: 0;
+  }
+}
+
 /* uso grid en lugar de las utilidades de bootstrap para tener un control más granular de las columnas */
+
+
+
 .item-pronostico {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

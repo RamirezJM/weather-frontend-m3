@@ -1,7 +1,8 @@
 @use 'abstracts/variables' as var;
 @use 'base/typography';
 @use 'abstracts/mixins' as mix;
-@use 'components';
+@use 'components/components';
+@use 'layout/layout';
 
 
 @use '../../node_modules/bootstrap/scss/bootstrap.scss' with(
@@ -22,61 +23,4 @@ header, footer{
   color: var.$text-light;
   font-weight: 600;
   font-size: 1.2rem;
-}
-
-.hero__btn, .form__btn{
-  @include mix.gradient2(var.$danger-light, var.$danger)
-}
-
-.btn-detalle{
-  @include mix.gradient2(var.$primary, var.$sky-light)
-}
-
-/* .pronostico{
-  
-    background-color: var.$light;
-  
-}
-
-.pronostico{
-  @include bootstrap.color-mode(dark){
-    background-color: var.$sky-dark;
-  }
-} */
-
-/* .pronostico {
-  background-color: var.$light; */ // Tu color base
-
-  // INTENTA ESTO MANUALMENTE (sin el mixin)
-  // Esto simula exactamente lo que el mixin debería hacer
-/*   @at-root [data-bs-theme="dark"] & {
-     background-color: red !important; // Usa un color obvio y !important para probar
-  }
-} */
-
-[data-bs-theme="dark"] .pronostico{
-  background-color: var.$bg-dark;
-}
-
-[data-bs-theme="dark"] .card{
-  border: var.$text-light solid 2px;
-}
-
-
-
-.top__btn {
-  position: fixed;
-  bottom: 50px;
-  right: 20px;
-  z-index: 50;
-  opacity: 0;
-  transition: opacity .5s ease-in-out;
-}
-
-.show {
-  opacity: 1;
-}
-
-.contacto__form{
-  max-width: 600px;
 }

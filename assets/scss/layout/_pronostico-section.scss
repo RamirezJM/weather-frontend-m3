@@ -2,7 +2,7 @@
 
 
 .pronostico {
-  background-color: var.$bg-light;
+  background-color: var.$light;
 
   @at-root [data-bs-theme="dark"] & {
     background-color: var.$bg-dark;
