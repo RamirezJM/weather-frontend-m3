@@ -1,17 +1,17 @@
 @use '../abstracts/variables' as var;
 
-
 .contacto__form {
   max-width: 600px;
+}
 
+.form-control {
   @at-root [data-bs-theme="dark"] & {
-    /* background-color: var.$secondary; */
+    color: var.$text-light;
+    background-color: var.$bg-dark;
 
-    input, textarea{
-      background-color: var.$light;
+    &::placeholder {
       color: var.$secondary;
+      opacity: 1;
     }
-
   }
-
 }

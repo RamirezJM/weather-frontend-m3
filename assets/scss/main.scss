@@ -14,13 +14,6 @@
    $dark: var.$dark
 );
 
-header, footer{
-  @include mix.gradient(45deg, var.$primary, var.$sky-light 50%, var.$sky-dark )
-}
 
-.navbar-custom-text .nav-link,
-.navbar-custom-text .navbar-brand {
-  color: var.$text-light;
-  font-weight: 600;
-  font-size: 1.2rem;
-}
+
+
