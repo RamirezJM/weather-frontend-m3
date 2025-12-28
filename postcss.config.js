@@ -8,13 +8,15 @@ export default {
   plugins: [
     autoprefixer,
     purgecss({
+
+      /* mantengo solo las clases usadas en el proyecto, eliminando todas las no usadas (~ 10.500) */
       content: [
         './*.html',
         './assets/js/**/*.js',
       ],
       defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
        safelist: {
-        standard: ['collapse', 'collapsing', 'show','active', 'modal-open', 'modal-static'],
+        standard: [/^modal/, /^navbar/, /^btn/, 'active', 'show', 'fade', 'collapsing'],
         deep: [],
         greedy: []
       },

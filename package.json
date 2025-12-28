@@ -15,7 +15,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "watch:css": "sass assets/scss/main.scss assets/css/styles.css --watch --quiet-deps",
+    "watch:css": "sass assets/scss/main.scss assets/css/styles.css --watch --quiet",
     "build:css": "postcss assets/css/styles.css --output assets/css/styles.css --no-map",
     "purge": "postcss assets/css/styles.css --use @fullhuman/postcss-purgecss --output assets/css/styles.css --no-map"
   },
