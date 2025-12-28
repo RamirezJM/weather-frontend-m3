@@ -27,47 +27,16 @@
 
   setTheme(getPreferredTheme());
 
-/*   const showActiveTheme = (theme, focus = false) => {
-    const themeSwitcher = document.querySelector('#bd-theme');
 
-    if (!themeSwitcher) {
-      return;
-    }
-
-    const themeSwitcherText = document.querySelector('#bd-theme-text');
- 
-    const btnToActive = document.querySelector(
-      `[data-bs-theme-value="${theme}"]`
-    );
-    document.querySelectorAll('[data-bs-theme-value]').forEach((element) => {
-      element.classList.remove('active');
-      element.setAttribute('aria-pressed', 'false');
-    });
-
-    btnToActive.classList.add('active');
-    btnToActive.setAttribute('aria-pressed', 'true');
-    
-    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
-    themeSwitcher.setAttribute('aria-label', themeSwitcherLabel);
-
-    if (focus) {
-      themeSwitcher.focus();
-    }
-  }; */
   const showActiveTheme = (theme, focus = false) => {
-    // 1. Buscamos el botón que corresponde al tema actual
     const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
-    
-    // Si por alguna razón no existe el botón, salimos
     if (!btnToActive) return;
 
-    // 2. Quitamos la clase active de TODOS los botones de tema
     document.querySelectorAll('[data-bs-theme-value]').forEach((element) => {
       element.classList.remove('active');
       element.setAttribute('aria-pressed', 'false');
     });
 
-    // 3. Agregamos la clase active SOLO al botón actual
     btnToActive.classList.add('active');
     btnToActive.setAttribute('aria-pressed', 'true');
 
