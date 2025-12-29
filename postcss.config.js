@@ -9,7 +9,7 @@ export default {
     autoprefixer,
     purgecss({
 
-      /* mantengo solo las clases usadas en el proyecto, eliminando todas las no usadas (~ 10.500) */
+      /* mantengo solo las clases usadas en el proyecto, eliminando todas las no usadas (~ 10.500 líneas de código) */
       content: [
         './*.html',
         './assets/js/**/*.js',
@@ -22,4 +22,5 @@ export default {
       },
     }),
   ],
+
 };
